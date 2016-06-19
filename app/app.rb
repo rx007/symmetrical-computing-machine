@@ -1,5 +1,7 @@
 module SymmetricalComputingMachine
   class App < Padrino::Application
+    register DeflectInitializer
+    register AnalyticsInitializer
     use ConnectionPoolManagement
     register Padrino::Mailer
     register Padrino::Helpers

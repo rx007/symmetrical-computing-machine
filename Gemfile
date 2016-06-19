@@ -17,6 +17,8 @@ source 'https://rubygems.org'
 gem 'rake'
 
 # Component requirements
+gem 'rack-contrib', :require => 'rack/contrib', :git => 'git://github.com/rack/rack-contrib.git'
+gem 'rack-google-analytics', :require => 'rack/google-analytics'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'

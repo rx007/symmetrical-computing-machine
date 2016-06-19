@@ -1,12 +1,37 @@
-# If you do not have OpenSSL installed, change
-# the following line to use 'http://'
 source 'https://rubygems.org'
 
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
+# Padrino supports Ruby version 1.9 and later
+# ruby '2.3.1'
 
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
+# Distribute your app as a gem
+# gemspec
 
-# Middleman Gems
-gem 'middleman', '>= 4.0.0'
+# Server requirements
+# gem 'thin' # or mongrel
+# gem 'trinidad', :platform => 'jruby'
+
+# Optional JSON codec (faster performance)
+# gem 'oj'
+
+# Project requirements
+gem 'rake'
+
+# Component requirements
+gem 'erubis', '~> 2.7.0'
+gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'sqlite3'
+
+# Test requirements
+gem 'rspec', :group => 'test'
+gem 'rack-test', :require => 'rack/test', :group => 'test'
+
+# Padrino Stable Gem
+gem 'padrino', '0.13.2'
+
+# Or Padrino Edge
+# gem 'padrino', :github => 'padrino/padrino-framework'
+
+# Or Individual Gems
+# %w(core support gen helpers cache mailer admin).each do |g|
+#   gem 'padrino-' + g, '0.13.2'
+# end

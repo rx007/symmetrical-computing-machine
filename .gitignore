@@ -7,3 +7,5 @@ vendor/gems/*
 db/*.db
 .*.sw*
 *.lock
+*.sock
+*.state
